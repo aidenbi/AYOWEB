@@ -7,13 +7,7 @@ import NavScrollExample from './components/NavBar';
 function App() {
   return (
     <div><NavScrollExample></NavScrollExample>
-      <Router>
-        <Routes>
-
-        </Routes>
-      </Router>
       <div className="App">
-
         <header className="">
           <img src={logo} width="200" height="150" alt='menu' />
           <h1>Asian Yummy One</h1>
