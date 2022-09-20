@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import menu from "./menu.jpg"
+import menu2 from "./menu2.jpg"
+import logo from "./crazylogo.PNG"
+import NavScrollExample from './components/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div><NavScrollExample></NavScrollExample>
+      <Router>
+        <Routes>
+
+        </Routes>
+      </Router>
+      <div className="App">
+
+        <header className="">
+          <img src={logo} width="200" height="150" alt='menu' />
+          <h1>Asian Yummy One</h1>
+          <img src={menu} width="600" height="400" alt='menu' />
+          <img src={menu2} width="600" height="400" alt='menu' />
+        </header>
+      </div></div>
   );
 }
 
