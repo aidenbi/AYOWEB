@@ -1,0 +1,24 @@
+@import url('http://fonts.cdnfonts.com/css/circular-std');
+
+.Directions {
+    height: 500px;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+    height: 480px;
+    border: 1px solid red;
+}
+
+.location {
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    margin-left: 60px;
+    font-family: 'Circular Std', sans-serif;
+}
+
+.row::after {
+    display: flex;
+}
