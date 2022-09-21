@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/circular-std');
+@import url('http://fonts.cdnfonts.com/css/circular-std-book');
 @import url('bootstrap/dist/css/bootstrap.min.css');
 
 * {
@@ -31,8 +31,7 @@ p {
 }
 
 .Hours-paragraph {
-  font-family: 'Circular Std';
-  font-style: normal;
+  font-family: 'Circular Std Book';
   font-weight: 450;
   font-size: 12px;
   text-align: left;
@@ -40,10 +39,6 @@ p {
 }
 
 .Directions {
-  height: 500px
-}
-
-.Reviews {
   height: 500px
 }
 
