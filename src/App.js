@@ -14,7 +14,7 @@ function App() {
   return (
     <div>
       <NavBar></NavBar>
-      <img className='Top-image' src={topImage}></img>
+      <img id='home' className='Top-image' src={topImage}></img>
       <About></About>
       <Hours></Hours>
       <Directions></Directions>
