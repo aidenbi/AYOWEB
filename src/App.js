@@ -4,7 +4,7 @@ import menu2 from "./menu2.jpg"
 import NavBar from './components/NavBar/NavBar';
 import About from './components/About/About';
 import Hours from './components/Hours/Hours';
-import Directions from './components/Directions';
+import Directions from './components/Directions/Directions';
 import Reviews from './components/Reviews';
 import Menu from './components/Menu';
 import Contact from './components/Contact'
