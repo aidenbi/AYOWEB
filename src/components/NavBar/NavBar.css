@@ -1,0 +1,49 @@
+.Nav-heading-elements :hover {
+    padding-bottom: 0.2em;
+    opacity: 60%;
+}
+
+.active {
+    opacity: 60%;
+    color: white;
+    text-decoration: none;
+}
+
+.a:hover {
+    opacity: 60%;
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+}
+
+.a:visited {
+    color: none;
+}
+
+.Nav-heading {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.Nav-heading-elements {
+    margin: 0em 2em 0em 2em;
+    background: none;
+    border: none;
+    list-style: none;
+    font-family: 'Circular Std', sans-serif;
+    font-style: normal;
+    font-weight: 1;
+    font-size: 1em;
+    line-height: 13px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
