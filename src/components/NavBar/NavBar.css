@@ -31,6 +31,7 @@ a:active {
     justify-content: center;
     min-width: 100vw;
     background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
 }
 
 .Nav-heading-elements {
