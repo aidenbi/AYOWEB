@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/circular-std');
+
 .App {
   text-align: center;
   background-color: #f7e8d3;
@@ -12,6 +14,79 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+
+.Nav-heading-elements {
+  margin: 0em 2em 0em 2em;
+  background: none;
+  border: none;
+  list-style: none;
+  font-family: 'Circular Std', sans-serif;
+  font-style: normal;
+  font-weight: 1;
+  font-size: 1em;
+  line-height: 13px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.Top-image {
+  width: 100%;
+}
+
+.Nav-heading-elements :hover {
+  padding-bottom: 0.2em;
+  opacity: 60%;
+}
+
+.active {
+  opacity: 60%;
+  color: white;
+  text-decoration: none;
+}
+
+.a:hover {
+  opacity: 60%;
+}
+
+.visited {
+  color: none;
+}
+
+.Nav-heading {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.About {
+  height: 500px
+}
+
+.Hours {
+  height: 500px
+}
+
+.Directions {
+  height: 500px
+}
+
+.Menu {
+  height: 500px
+}
+
+.Reviews {
+  height: 500px
+}
+
+.Contact {
+  height: 500px
 }
 
 .App-header {
