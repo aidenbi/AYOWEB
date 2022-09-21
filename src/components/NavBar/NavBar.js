@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-scroll'
-import logo from '../../images/logo.svg'
+import logo from '../../images/ayologo.png'
 import './NavBar.css'
 
 const NavBar = () => {
@@ -15,7 +15,7 @@ const NavBar = () => {
             <li className="Nav-heading-elements">
                 <Link to="directions" spy={true} offset={-100} duration={500}>Directions</Link>
             </li>
-            <img className="Nav-heading-elements" src={logo} />
+            <Link className="Nav-heading-elements" style={{ opacity: "100%" }} to="home" spy={true} offset={-100} duration={500}><img src={logo} /></Link>
             <li className="Nav-heading-elements">
                 <Link to="menu" spy={true} offset={-100} duration={500}>Menu</Link>
             </li>
