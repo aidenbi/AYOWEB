@@ -7,8 +7,8 @@ import 'react-multi-carousel/lib/styles.css';
 
 // TODO figure out how to hide api key in req, might need to spin up a simple backend service
 // alternatively store reviews on client?
-const placeId = 'ChIJcU3Nd8STKogRF6qdDA6KUYQ'
-const key = 'AIzaSyDOJaQTD3bnYCSSgnJuyyNU6gBYdFOkzV8'
+// const placeId = 'ChIJcU3Nd8STKogRF6qdDA6KUYQ'
+// const key = 'AIzaSyDOJaQTD3bnYCSSgnJuyyNU6gBYdFOkzV8'
 
 
 const ReviewCarousel = (props) => {
