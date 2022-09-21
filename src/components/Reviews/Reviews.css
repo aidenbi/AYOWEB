@@ -21,13 +21,13 @@
 }
 
 .Reviews-reviewcard {
-    margin: 0em 2em;
+    margin: 1em 3em;
     background: #FFFFFF;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 1em;
+    padding: 1.5em 2em;
     min-height: 15em;
     position: relative;
 }
@@ -35,7 +35,7 @@
 .Reviews-rating {
     position: absolute;
     bottom: 0.4em;
-    left: 0.75em;
+    left: 1.7em;
 }
 
 .Reviews-image {
@@ -69,4 +69,5 @@
     color: #787878;
     display: flex;
     align-items: center;
+    padding-top: 1em;
 }
