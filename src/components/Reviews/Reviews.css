@@ -1,0 +1,72 @@
+.Reviews {
+    height: 500px;
+    background: #898B61;
+}
+
+.Reviews-title {
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 4em;
+    margin-bottom: 2em;
+}
+
+.Reviews-carousel {
+    margin: 2em 4em;
+}
+
+.Reviews-reviewcard {
+    margin: 0em 2em;
+    background: #FFFFFF;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1em;
+    min-height: 15em;
+    position: relative;
+}
+
+.Reviews-rating {
+    position: absolute;
+    bottom: 0.4em;
+    left: 0.75em;
+}
+
+.Reviews-image {
+    max-width: 2vw;
+    margin-right: 0.7em;
+}
+
+.Reviews-metadata {
+    display: flex;
+    align-items: center;
+}
+
+.Reviews-name {
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height, or 125% */
+    padding-top: 0.3em;
+
+    color: #898B61;
+}
+
+.Reviews-text {
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 12px;
+    line-height: 25px;
+    color: #787878;
+    display: flex;
+    align-items: center;
+}
