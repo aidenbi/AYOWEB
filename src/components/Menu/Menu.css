@@ -20,16 +20,16 @@
 }
 
 .Menu-title {
-    font-family: 'Circular Std';
-    font-style: normal;
+    font-family: 'Circular Std Book';
+
     font-weight: 500;
     font-size: 20px;
     color: #FFFFFF;
 }
 
 .Menu-paragraph {
-    font-family: 'Circular Std';
-    font-style: normal;
+    font-family: 'Circular Std Book';
+
     font-weight: 450;
     font-size: 12px;
     text-align: left;
@@ -44,8 +44,8 @@ a.button {
     text-decoration: none;
     background: #000000;
     box-sizing: border-box;
-    font-family: 'Circular Std';
-    font-style: normal;
+    font-family: 'Circular Std Book';
+
     font-weight: 450;
     font-size: 14px;
     line-height: 18px;

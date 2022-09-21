@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Carousel from 'react-multi-carousel';
 import ReviewCard from './ReviewCard';
+import Reviews from './ReviewList'
 import 'react-multi-carousel/lib/styles.css';
 
 
@@ -11,7 +12,7 @@ const key = 'AIzaSyDOJaQTD3bnYCSSgnJuyyNU6gBYdFOkzV8'
 
 
 const ReviewCarousel = (props) => {
-    const [reviews, setReviews] = useState([])
+    /* const [reviews, setReviews] = useState([])
     useEffect(() => {
         const url = 'https://maps.googleapis.com/maps/api/place/details/json?place_id=' + placeId + '&key=' + key
         const encoded_url = encodeURI(url)
@@ -32,9 +33,12 @@ const ReviewCarousel = (props) => {
                 const goodReviews = reviewMap.filter(review => {
                     return review.value >= 5
                 })
+                console.log(goodReviews)
                 setReviews(goodReviews)
             })
-    }, [])
+    }, []) */
+
+    const reviews = Reviews
     const responsive = {
         desktop: {
             breakpoint: { max: 3000, min: 1024 },

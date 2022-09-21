@@ -7,8 +7,8 @@
 }
 
 .About-heading {
-    font-family: 'Circular Std';
-    font-style: normal;
+    font-family: 'Circular Std Book';
+
     font-weight: 500;
     font-size: 20px;
     line-height: 25px;
@@ -18,8 +18,8 @@
 }
 
 .About-paragraph {
-    font-family: 'Circular Std';
-    font-style: normal;
+    font-family: 'Circular Std Book';
+
     font-weight: 450;
     font-size: 12px;
     line-height: 135%;
