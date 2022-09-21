@@ -1,51 +1,31 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import React from 'react'
+import {Link} from 'react-scroll'
+import logo from '../images/logo.svg'
 
-function NavScrollExample() {
-    return (
-        <Navbar bg="light" expand="lg">
-            <Container fluid>
-                <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
-                <Navbar.Toggle aria-controls="navbarScroll" />
-                <Navbar.Collapse id="navbarScroll">
-                    <Nav
-                        className="me-auto my-2 my-lg-0"
-                        style={{ maxHeight: '100px' }}
-                        navbarScroll
-                    >
-                        <Nav.Link href="#action1">Home</Nav.Link>
-                        <Nav.Link href="#action2">Link</Nav.Link>
-                        <NavDropdown title="Link" id="navbarScrollingDropdown">
-                            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action4">
-                                Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action5">
-                                Something else here
-                            </NavDropdown.Item>
-                        </NavDropdown>
-                        <Nav.Link href="#" disabled>
-                            Link
-                        </Nav.Link>
-                    </Nav>
-                    <Form className="d-flex">
-                        <Form.Control
-                            type="search"
-                            placeholder="Search"
-                            className="me-2"
-                            aria-label="Search"
-                        />
-                        <Button variant="outline-success">Search</Button>
-                    </Form>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
-    );
+const NavBar = () => {
+  return (
+    <div className="Nav-heading">
+        <li className="Nav-heading-elements">
+            <Link to="about" spy={true} offset={-100} duration={500}>About</Link>
+        </li>
+        <li className="Nav-heading-elements">
+            <Link to="hours" spy={true} offset={-100} duration={500}>Hours</Link>
+        </li>
+        <li className="Nav-heading-elements">
+            <Link to="directions" spy={true} offset={-100} duration={500}>Directions</Link>
+        </li>
+        <img className="Nav-heading-elements" src={logo}/>
+        <li className="Nav-heading-elements">
+            <Link to="menu" spy={true} offset={-100} duration={500}>Menu</Link>
+        </li>
+        <li className="Nav-heading-elements">
+            <Link to="reviews" spy={true} offset={-100} duration={500}>Reviews</Link>
+        </li>
+        <li className="Nav-heading-elements">
+            <Link to="contact" spy={true} offset={-100} duration={500}>Contact</Link>
+        </li>
+    </div>
+  )
 }
 
-export default NavScrollExample;
+export default NavBar

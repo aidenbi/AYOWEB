@@ -1,20 +1,28 @@
 import './App.css';
 import menu from "./menu.jpg"
 import menu2 from "./menu2.jpg"
-import logo from "./crazylogo.PNG"
-import NavScrollExample from './components/NavBar';
+import NavBar from './components/NavBar';
+import About from './components/About';
+import Hours from './components/Hours';
+import Directions from './components/Directions';
+import Reviews from './components/Reviews';
+import Menu from './components/Menu';
+import Contact from './components/Contact'
+import topImage from './images/main1.svg'
 
 function App() {
   return (
-    <div><NavScrollExample></NavScrollExample>
-      <div className="App">
-        <header className="">
-          <img src={logo} width="200" height="150" alt='menu' />
-          <h1>Asian Yummy One</h1>
-          <img src={menu} width="600" height="400" alt='menu' />
-          <img src={menu2} width="600" height="400" alt='menu' />
-        </header>
-      </div></div>
+    <div>
+        <NavBar></NavBar>
+        <img className='Top-image' src={topImage}></img>
+        <About></About>
+        <Hours></Hours>
+        <Directions></Directions>
+        <Menu></Menu>
+        <Reviews></Reviews>
+        <Contact></Contact>
+       
+    </div>
   );
 }
 
