@@ -1,0 +1,29 @@
+.About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 16em
+}
+
+.About-heading {
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+
+    color: #787878;
+}
+
+.About-paragraph {
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 450;
+    font-size: 12px;
+    line-height: 135%;
+
+    text-align: center;
+    color: #787878;
+}

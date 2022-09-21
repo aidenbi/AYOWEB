@@ -1,9 +1,9 @@
 import './App.css';
 import menu from "./menu.jpg"
 import menu2 from "./menu2.jpg"
-import NavBar from './components/NavBar';
-import About from './components/About';
-import Hours from './components/Hours';
+import NavBar from './components/NavBar/NavBar';
+import About from './components/About/About';
+import Hours from './components/Hours/Hours';
 import Directions from './components/Directions';
 import Reviews from './components/Reviews';
 import Menu from './components/Menu';
@@ -13,15 +13,15 @@ import topImage from './images/main1.svg'
 function App() {
   return (
     <div>
-        <NavBar></NavBar>
-        <img className='Top-image' src={topImage}></img>
-        <About></About>
-        <Hours></Hours>
-        <Directions></Directions>
-        <Menu></Menu>
-        <Reviews></Reviews>
-        <Contact></Contact>
-       
+      <NavBar></NavBar>
+      <img className='Top-image' src={topImage}></img>
+      <About></About>
+      <Hours></Hours>
+      <Directions></Directions>
+      <Menu></Menu>
+      <Reviews></Reviews>
+      <Contact></Contact>
+
     </div>
   );
 }

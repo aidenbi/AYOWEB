@@ -1,0 +1,26 @@
+.Hours {
+    background: #898B61;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 16em 4em 32em
+}
+
+.Hours-heading {
+    font-family: 'Circular Std';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.Hours-columns {
+    display: flex;
+}
+
+.Hours-breakdown {
+    padding: 0 5em 0 0;
+}
