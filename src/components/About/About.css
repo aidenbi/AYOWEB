@@ -3,14 +3,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 8em 40em
+    height: 25vw;
 }
 
 .About-heading {
     font-family: 'Circular Std Book';
 
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.6vw;
     line-height: 25px;
     text-align: center;
 
@@ -21,9 +21,9 @@
     font-family: 'Circular Std Book';
 
     font-weight: 450;
-    font-size: 12px;
+    font-size: 1vw;
     line-height: 135%;
-
+    max-width: 50vw;
     text-align: center;
     color: #787878;
 }

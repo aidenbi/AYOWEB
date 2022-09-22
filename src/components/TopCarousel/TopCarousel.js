@@ -9,7 +9,8 @@ import Slider from 'react-slick'
 export default class TopCarousel extends Component {
     render() {
         const settings = {
-            dots: false,
+            dots: true,
+            arrows: false,
             infinite: true,
             speed: 500,
             slidesToShow: 1,

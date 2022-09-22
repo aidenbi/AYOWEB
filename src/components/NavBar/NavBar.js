@@ -15,7 +15,7 @@ const NavBar = () => {
             <li className="Nav-heading-elements">
                 <Link to="directions" spy={true} offset={-100} duration={500}>Directions</Link>
             </li>
-            <Link className="Nav-heading-elements" style={{ opacity: "100%" }} to="home" spy={true} offset={-100} duration={500}><img src={logo} /></Link>
+            <Link style={{ opacity: "100%" }} to="home" spy={true} offset={-100} duration={500}><img className="logoLink" src={logo} /></Link>
             <li className="Nav-heading-elements">
                 <Link to="menu" spy={true} offset={-100} duration={500}>Menu</Link>
             </li>
