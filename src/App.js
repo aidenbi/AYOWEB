@@ -6,13 +6,13 @@ import Directions from './components/Directions';
 import Reviews from './components/Reviews/Reviews';
 import Menu from './components/Menu/Menu';
 import Contact from './components/Contact'
-import topImage from './images/main1.svg'
+import TopCarousel from './components/TopCarousel/TopCarousel'
 
 function App() {
   return (
     <div>
       <NavBar></NavBar>
-      <img id='home' className='Top-image' src={topImage}></img>
+      <TopCarousel></TopCarousel>
       <About></About>
       <Hours></Hours>
       <Directions></Directions>
