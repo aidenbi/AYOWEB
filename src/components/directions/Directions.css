@@ -1,0 +1,40 @@
+@import url('http://fonts.cdnfonts.com/css/circular-std');
+
+.Directions {
+    height: 500px;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+    height: 480px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.location {
+    display: flex;
+    align-self: flex-start;
+    font-family: 'Circular Std', sans-serif;
+    padding: 5px;
+    margin-left: 3.4em;
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+.textbox {
+    display: flex;
+    font-family: 'Circular Std', sans-serif;
+    padding: 5px;
+    margin-left: 4em;
+    font-size: 20px;
+
+}
+
+.row::after {
+    display: flex;
+}

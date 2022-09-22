@@ -2,9 +2,9 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import About from './components/About/About';
 import Hours from './components/Hours/Hours';
-import Directions from './components/Directions';
 import Reviews from './components/Reviews/Reviews';
 import Menu from './components/Menu/Menu';
+import Directions from './components/Directions/Directions';
 import Contact from './components/Contact'
 import TopCarousel from './components/TopCarousel/TopCarousel'
 
