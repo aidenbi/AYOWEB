@@ -4,6 +4,10 @@
     overflow: hidden;
 }
 
+.slick-track {
+    top: 0;
+}
+
 .Top-image {
     object-fit: cover;
     width: 100%;
@@ -25,4 +29,5 @@
     right: 0;
     height: fit-content;
     margin: auto;
+
 }
