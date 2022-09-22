@@ -1,9 +1,11 @@
 import React from 'react'
+import SpanningImage from '../../images/spanningFood.svg'
 import './Hours.css'
 
 const Hours = () => {
   return (
     <div className="Hours" id="hours">
+      <img className='SpanningImage' src={SpanningImage}></img>
       <h1 className="Hours-heading">HOURS</h1>
       <div className="Hours-columns">
         <div className="Hours-breakdown">

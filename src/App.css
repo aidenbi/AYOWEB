@@ -90,15 +90,3 @@ p {
 ::-webkit-scrollbar-thumb:active {
   background: rgba(0, 0, 0, .9);
 }
-
-.SpanningContainer {
-  position: relative
-}
-
-.SpanningImage {
-  position: absolute;
-  width: 40%;
-  height: 40%;
-  top: 15.5em;
-  left: 16em;
-}
