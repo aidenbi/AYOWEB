@@ -28,7 +28,7 @@ p {
 }
 
 .Hours-paragraph {
-  font-family: 'Circular Std Book';
+  font-family: 'Circular Std', sans-serif;
   font-weight: 450;
   font-size: 12px;
   text-align: left;
