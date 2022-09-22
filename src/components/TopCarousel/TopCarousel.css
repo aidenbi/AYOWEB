@@ -18,7 +18,7 @@
     font-family: 'Circular Std';
     font-style: normal;
     font-weight: 700;
-    font-size: 70px;
+    font-size: 6vw;
     line-height: 61px;
     color: white;
     text-align: center;
@@ -37,7 +37,7 @@
 
 .slick-dots li button:before {
     color: white;
-    font-size: 25px;
+    font-size: 1.7vw;
 }
 
 .slick-dots li.slick-active button:before {
@@ -45,5 +45,5 @@
 }
 
 .slick-dots li {
-    margin: 0 35px;
+    margin: 0 1.7vw;
 }
