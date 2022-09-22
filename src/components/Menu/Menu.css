@@ -1,18 +1,18 @@
 .Menu {
-    display: flex
+    display: flex;
+    margin-top: 5vw
 }
 
 .Menu-right {
     background-color: #898B61;
-    min-width: 50vw;
 }
 
 .Menu-left {
-    min-width: 50vw;
+    width: 50%
 }
 
 .Menu-info {
-    padding: 4em 4em
+    padding: 4vw 4vw
 }
 
 .Menu-carousel {}
@@ -21,7 +21,7 @@
     font-family: 'Circular Std Book';
 
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.6vw;
     color: #FFFFFF;
 }
 
@@ -29,7 +29,7 @@
     font-family: 'Circular Std Book';
 
     font-weight: 450;
-    font-size: 12px;
+    font-size: 1vw;
     text-align: left;
     color: #FFFFFF;
 }
@@ -45,10 +45,22 @@ a.button {
     font-family: 'Circular Std Book';
 
     font-weight: 450;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1.2vw;
     text-align: center;
     color: #FFFFFF;
-    width: 8em;
-    margin-top: 1.5em;
+    width: 10vw;
+    margin-top: 2vw;
+}
+
+@media (max-width: 1220px) {
+    .Menu-left {
+        width: 0%
+    }
+
+    .Menu-right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
