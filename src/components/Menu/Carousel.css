@@ -8,9 +8,6 @@
 .menuImage:hover {}
 
 
-.slick-slide {
-    margin: 6em 0em;
-}
 
 
 .slick-arrow {
@@ -25,4 +22,8 @@
 .slick-next {
     z-index: 100;
     right: 20px !important;
+}
+
+.menuCarouselContainer {
+    margin: 6em 0em;
 }
