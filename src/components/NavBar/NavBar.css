@@ -1,5 +1,4 @@
 .Nav-heading-elements :hover {
-    padding-bottom: 0.2em;
     opacity: 60%;
     cursor: pointer;
 }

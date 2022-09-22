@@ -1,20 +1,18 @@
 .Hours {
     background: #898B61;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     position: relative;
-    padding: 4em 16em 4em 32em
+    max-height: 22vw;
+    margin-top: 4vh;
 }
 
 .Hours-heading {
     font-family: 'Circular Std Book';
-
     font-weight: 500;
-    font-size: 20px;
-    text-align: center;
-
+    font-size: 1.4vw;
+    text-align: left;
     color: #FFFFFF;
 }
 
@@ -23,11 +21,21 @@
 }
 
 .Hours-breakdown {
-    padding: 0 5em 0 0;
+    margin: 0 4vw 0 0;
 }
 
 .SpanningImage {
-    position: absolute;
-    width: 40vh;
-    left: 25vw;
+    height: 40vh;
+    width: 40vw;
+    margin-left: 18vw;
+    margin-right: 9vw;
+}
+
+.HoursContainer {
+    flex-direction: column;
+    margin-left: 9vw;
+}
+
+.Hours-paragraph {
+    font-size: 0.8vw;
 }
