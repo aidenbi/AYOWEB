@@ -4,8 +4,9 @@
     justify-content: flex-start;
     align-items: center;
     position: relative;
-    max-height: 22vw;
+    max-height: 20vw;
     margin-top: 4vh;
+    margin-bottom: 4vh;
 }
 
 .Hours-heading {
@@ -25,10 +26,9 @@
 }
 
 .SpanningImage {
-    height: 40vh;
+    height: 35vh;
     width: 40vw;
     margin-left: 18vw;
-    margin-right: 9vw;
 }
 
 .HoursContainer {
@@ -37,5 +37,36 @@
 }
 
 .Hours-paragraph {
-    font-size: 0.8vw;
+    font-size: 1vw;
+}
+
+@media (max-width: 480px) {
+    .SpanningImage {
+        height: 0;
+        width: 0;
+        margin: 0;
+    }
+
+    .HoursContainer {
+        margin: 5vw auto;
+    }
+}
+
+@media (min-width: 1500px) {
+    .Hours {
+        background: #898B61;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        max-height: 15vw;
+        margin-top: 4vh;
+        margin-bottom: 4vh;
+    }
+
+    .SpanningImage {
+        height: 40vh;
+        width: 45vw;
+        margin-left: 10vw;
+    }
 }
