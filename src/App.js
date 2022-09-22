@@ -7,7 +7,6 @@ import Menu from './components/Menu/Menu';
 import Directions from './components/Directions/Directions';
 import Contact from './components/Contact'
 import TopCarousel from './components/TopCarousel/TopCarousel'
-import SpanningImage from './images/spanningFood.svg'
 
 function App() {
   return (
@@ -15,14 +14,11 @@ function App() {
       <NavBar></NavBar>
       <TopCarousel></TopCarousel>
       <About></About>
-      <Hours>
-        <img className='SpanningImage' src={SpanningImage}></img>
-      </Hours>
+      <Hours></Hours>
       <Directions></Directions>
       <Menu></Menu>
       <Reviews></Reviews>
       <Contact></Contact>
-
     </div>
   );
 }
