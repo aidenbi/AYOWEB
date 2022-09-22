@@ -14,12 +14,11 @@ function App() {
     <div>
       <NavBar></NavBar>
       <TopCarousel></TopCarousel>
-      <div className='SpanningContainer'>
+      <About></About>
+      <Hours>
         <img className='SpanningImage' src={SpanningImage}></img>
-        <About></About>
-        <Hours></Hours>
-        <Directions></Directions>
-      </div>
+      </Hours>
+      <Directions></Directions>
       <Menu></Menu>
       <Reviews></Reviews>
       <Contact></Contact>
