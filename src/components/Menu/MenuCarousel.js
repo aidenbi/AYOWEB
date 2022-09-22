@@ -5,9 +5,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 import './Carousel.css';
 
-import { BsFacebook, BsInstagram } from 'react-icons/bs'
-import { FaTiktok, FaYelp } from 'react-icons/fa'
-
 import image1 from '../Menu/foodImage/Rectangle2.svg'
 import image2 from '../Menu/foodImage/Rectangle3.svg'
 import image3 from '../Menu/foodImage/Rectangle4.svg'
@@ -55,21 +52,3 @@ export default class MenuCarousel extends Component {
         );
     }
 }
-
-// <Slider {...sliderSettings}>
-//             {foodieCards.map((card, index) => (
-//                 <div className="card-wrapper">
-//                     <div className="card">
-//                         <div className="card-image" key={index}>
-//                             <img alt={card.title} src={card.imageSrc} />
-//                             <ul className="social-icons">
-//                                 <li className="social-icons-list"> {card.socials[0]}</li>
-//                                 <li > {card.socials[1]}</li>
-//                                 <li >  {card.socials[2]}</li>
-//                                 <li > {card.socials[3]}</li>
-//                             </ul>
-//                         </div>
-//                     </div>
-//                 </div>
-//             ))}
-//         </Slider>

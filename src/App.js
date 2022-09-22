@@ -16,9 +16,7 @@ function App() {
       <About></About>
       <Hours></Hours>
       <Directions></Directions>
-      <Menu>
-
-      </Menu>
+      <Menu></Menu>
       <Reviews></Reviews>
       <Contact></Contact>
 

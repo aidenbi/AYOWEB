@@ -1,6 +1,5 @@
 .menuImage {
     width: 90%;
-
     display: block;
     margin: auto;
     border-radius: 15px;
@@ -8,7 +7,6 @@
 
 .menuImage:hover {}
 
-.card-wrapper {}
 
 .slick-slide {
     margin: 6em 0em;
