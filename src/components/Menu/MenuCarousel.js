@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import MenuCarouselCard from "./MenuCarouselCard";
 
 import './Carousel.css';
 
@@ -28,24 +29,12 @@ export default class MenuCarousel extends Component {
         return (
             <div className="menuCarouselContainer">
                 <Slider {...settings}>
-                    <div className="card-wrapper">
-                        <img className="menuImage" src={image1} />
-                    </div>
-                    <div className="card-wrapper">
-                        <img className="menuImage" src={image2} />
-                    </div>
-                    <div className="card-wrapper">
-                        <img className="menuImage" src={image3} />
-                    </div>
-                    <div className="card-wrapper">
-                        <img className="menuImage" src={image4} />
-                    </div>
-                    <div className="card-wrapper">
-                        <img className="menuImage" src={image5} />
-                    </div>
-                    <div className="card-wrapper">
-                        <img className="menuImage" src={image5} />
-                    </div>
+                    <MenuCarouselCard image={image1} />
+                    <MenuCarouselCard image={image1} />
+                    <MenuCarouselCard image={image3} />
+                    <MenuCarouselCard image={image4} />
+                    <MenuCarouselCard image={image4} />
+                    <MenuCarouselCard image={image3} />
 
                 </Slider >
             </div >

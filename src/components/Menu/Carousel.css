@@ -1,14 +1,18 @@
-.menuImage {
+.MenuImage {
     width: 90%;
     display: block;
     margin: auto;
-    border-radius: 15px;
+    border-radius: 1vw;
 }
 
-.menuImage:hover {}
+.MenuImage:hover {
+    transform: scale(1.1);
+}
 
-
-
+.slick-slide {
+    position: relative;
+    margin: 2vw 0vw;
+}
 
 .slick-arrow {
     color: black;
@@ -26,4 +30,31 @@
 
 .menuCarouselContainer {
     margin: 6em 0em;
+}
+
+.MenuCardContainer {
+    position: relative;
+    text-align: center;
+}
+
+.MenuTextBox {
+    position: absolute;
+    transform: translate(0.5%, -75%);
+    background: rgba(0, 0, 0, 0.5);
+    width: 99%;
+    height: 20%;
+    margin: auto auto;
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+}
+
+.MenuText {
+    position: relative;
+    top: 25%;
+    text-align: center;
+    font-family: 'Circular Std', sans-serif;
+    font-weight: 450;
+    font-size: 1vw;
+    vertical-align: middle;
+    color: black
 }
