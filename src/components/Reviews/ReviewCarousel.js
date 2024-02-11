@@ -44,13 +44,26 @@ const ReviewCarousel = (props) => {
             breakpoint: { max: 3000, min: 1024 },
             items: 3,
             slidesToSlide: 1 // optional, default to 1.
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 600 },
+            items: 2,
+            slidesToSlide: 1,
+            showDots: true // optional, default to 1.
+        },
+        mobile: {
+            breakpoint: { max: 600, min: 0 },
+            items: 1,
+            slidesToSlide: 1, // optional, default to 1.
+            showDots: true
         }
     };
     return (
         <Carousel
-            swipeable={false}
-            draggable={false}
-            showDots={false}
+            swipeable={true}
+            draggable={true}
+            partialVisible={false}
+            showDots={true}
             responsive={responsive}
             ssr={true} // means to render carousel on server-side.
             infinite={true}
@@ -61,7 +74,6 @@ const ReviewCarousel = (props) => {
             containerClass="Reviews-carousel"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             deviceType={"desktop"}
-            dotListClass="custom-dot-list-style"
             itemClass="carousel-item-padding-4-em"
         >
             {reviews.map((review, idx) => {
