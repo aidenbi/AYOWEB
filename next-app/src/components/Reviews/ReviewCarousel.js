@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Carousel from 'react-multi-carousel';
 import ReviewCard from './ReviewCard';
 import Reviews from './ReviewList'
@@ -12,7 +12,7 @@ import 'react-multi-carousel/lib/styles.css';
 // const key = 'AIzaSyDOJaQTD3bnYCSSgnJuyyNU6gBYdFOkzV8'
 
 
-const ReviewCarousel = (props) => {
+const ReviewCarousel = () => {
     /* const [reviews, setReviews] = useState([])
     useEffect(() => {
         const url = 'https://maps.googleapis.com/maps/api/place/details/json?place_id=' + placeId + '&key=' + key
