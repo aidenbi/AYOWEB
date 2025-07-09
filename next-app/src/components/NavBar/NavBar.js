@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import { Link } from 'react-scroll'
-import logo from '../../images/ayologo.png'
 import './NavBar.css'
 
 const NavBar = () => {
@@ -16,7 +15,7 @@ const NavBar = () => {
             <li className="Nav-heading-elements">
                 <Link to="directions" spy={true} offset={-100} duration={500}>Directions</Link>
             </li>
-            <Link style={{ opacity: "100%" }} to="home" spy={true} offset={-100} duration={500}><img className="logoLink" src={logo} /></Link>
+            <Link style={{ opacity: "100%" }} to="home" spy={true} offset={-100} duration={500}><img className="logoLink" src="/ayologo.png" /></Link>
             <li className="Nav-heading-elements">
                 <Link to="menu" spy={true} offset={-100} duration={500}>Menu</Link>
             </li>

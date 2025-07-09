@@ -1,32 +1,26 @@
-import image1 from '../Menu/foodImage/Rectangle2.svg'
-import image2 from '../Menu/foodImage/Rectangle3.svg'
-import image3 from '../Menu/foodImage/Rectangle4.svg'
-import image4 from '../Menu/foodImage/Rectangle5.svg'
-import image5 from '../Menu/foodImage/Rectangle6.svg'
-
 export default [
     {
-        image: image1,
+        image: '/Rectangle2.svg',
         text: "Chef's special chinese fried chicken"
     },
     {
-        image: image3,
+        image: '/Rectangle4.svg',
         text: "Cantonese Chow Mein"
     },
     {
-        image: image4,
+        image: '/Rectangle5.svg',
         text: "Seasame Chicken"
     },
     {
-        image: image5,
+        image: '/Rectangle6.svg',
         text: "General Tso Chicken"
     },
     {
-        image: image1,
+        image: '/Rectangle2.svg',
         text: "Shanghai Noodles"
     },
     {
-        image: image3,
+        image: '/Rectangle4.svg',
         text: "Mandarin Egg Noodle"
     }
 ]

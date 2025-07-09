@@ -9,7 +9,7 @@ const Footer = () => {
 
 
 
-            <div class="text-on-image">
+            <div className="text-on-image">
                 <div className="grid-container">
 
 
@@ -32,7 +32,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="grid-item footer-phone">
-                        <p className="phone-paragraph">+1(705)424 5555 &nbsp; 17 King St, Angus, ON L0M 1B0<hr /></p>
+                        <p className="phone-paragraph">+1(705)424 5555 &nbsp; 17 King St, Angus, ON L0M 1B0</p>
                     </div>
 
                 </div>

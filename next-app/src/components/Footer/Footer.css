@@ -1,7 +1,7 @@
 @import url('http://fonts.cdnfonts.com/css/circular-std');
 
 .footer-container {
-    background-image: url("../../images/main1.svg");
+    background-image: url("/main1.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
