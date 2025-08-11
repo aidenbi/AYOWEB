@@ -81,72 +81,70 @@
         border-radius: 4vw;
         padding: 2vw 4vw;
     }
-}
 
-padding: 0.7vw 2vw;
-border-radius: 1vw;
-}
+    padding: 0.7vw 2vw;
+    border-radius: 1vw;
+    /* Removed stray closing brace and misplaced properties */
 
-.call-button:hover {
-    color: white;
-}
+    .call-button:hover {
+        color: white;
+    }
 
 
-.footer-phone {
-    grid-row-start: 2;
-    grid-row-end: 2;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    background: rgba(0, 0, 0, 0.5);
-}
+    .footer-phone {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background: rgba(0, 0, 0, 0.5);
+    }
 
-.phone-paragraph {
-    padding-right: 5vw;
-    padding-bottom: 2vw;
-    width: 100%;
-    font-family: 'Circular Std';
-    font-style: normal;
-    font-weight: 450;
-    font-size: 12px;
-    line-height: 15px;
-    text-align: right;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.8);
-}
+    .phone-paragraph {
+        padding-right: 5vw;
+        padding-bottom: 2vw;
+        width: 100%;
+        font-family: 'Circular Std';
+        font-style: normal;
+        font-weight: 450;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: right;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.8);
+    }
 
-.footer-copyright {
-    grid-row-start: 2;
-    grid-row-end: 2;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    padding-left: 5vw;
-    padding-bottom: 2vw;
-    background: rgba(0, 0, 0, 0.5);
-}
+    .footer-copyright {
+        grid-row-start: 2;
+        grid-row-end: 2;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-left: 5vw;
+        padding-bottom: 2vw;
+        background: rgba(0, 0, 0, 0.5);
+    }
 
-.copyright {
-    font-family: 'Circular Std';
-    font-style: normal;
-    font-weight: 450;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: capitalize;
-    color: rgba(255, 255, 255, 0.5);
-}
+    .copyright {
+        font-family: 'Circular Std';
+        font-style: normal;
+        font-weight: 450;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: capitalize;
+        color: rgba(255, 255, 255, 0.5);
+    }
 
-.icons {
-    width: 4vw;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.5vw;
-}
+    .icons {
+        width: 4vw;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5vw;
+    }
 
-.text-on-image {
-    position: relative;
-}
+    .text-on-image {
+        position: relative;
+    }
 
-.bottom-image {
-    width: 100%;
-}
+    .bottom-image {
+        width: 100%;
