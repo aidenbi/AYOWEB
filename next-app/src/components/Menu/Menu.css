@@ -5,6 +5,8 @@
 
 .Menu-right {
     background-color: #898B61;
+    border-radius: 2vw;
+    box-shadow: 0 2px 12px rgba(140, 140, 100, 0.08);
 }
 
 .Menu-left {
@@ -19,35 +21,56 @@
 
 .Menu-title {
     font-family: 'Circular Std', sans-serif;
-
     font-weight: 500;
     font-size: 1.6vw;
-    color: #FFFFFF;
+    color: #fffef8;
 }
 
 .Menu-paragraph {
     font-family: 'Circular Std', sans-serif;
-
     font-weight: 450;
     font-size: 1vw;
     text-align: left;
-    color: #FFFFFF;
+    color: #fffef8;
 }
 
 a.button {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
-
     text-decoration: none;
     background: #000000;
     box-sizing: border-box;
     font-family: 'Circular Std', sans-serif;
-
     font-weight: 450;
     font-size: 1.2vw;
     text-align: center;
     color: #FFFFFF;
+    border-radius: 1vw;
+    box-shadow: 0 2px 8px rgba(140, 140, 100, 0.10);
+    transition: background 0.2s, color 0.2s;
+
+    @media (max-width: 600px) {
+        .Menu-right {
+            border-radius: 6vw;
+            padding: 4vw 2vw;
+        }
+
+        .Menu-title {
+            font-size: 5vw;
+        }
+
+        .Menu-paragraph {
+            font-size: 3vw;
+        }
+
+        a.button {
+            font-size: 4vw;
+            border-radius: 4vw;
+            padding: 2vw 4vw;
+        }
+    }
+
     width: 10vw;
     margin-top: 2vw;
 }

@@ -2,11 +2,18 @@
     width: 90%;
     display: block;
     margin: auto;
-    border-radius: 1vw;
+    border-radius: 2vw;
+    box-shadow: 0 2px 12px rgba(140, 140, 100, 0.08);
 }
 
 .MenuImage:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+
+    @media (max-width: 600px) {
+        .MenuImage {
+            border-radius: 6vw;
+        }
+    }
 }
 
 .slick-slide {

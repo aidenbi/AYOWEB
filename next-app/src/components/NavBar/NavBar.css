@@ -32,6 +32,9 @@ a:active {
     width: 100vw;
     background: rgba(0, 0, 0, 0.5);
     z-index: 5;
+    box-shadow: 0 2px 12px rgba(140, 140, 100, 0.08);
+    border-bottom-left-radius: 1vw;
+    border-bottom-right-radius: 1vw;
 }
 
 .Nav-heading-elements {
@@ -44,8 +47,23 @@ a:active {
     font-size: 1.5vw;
     line-height: 13px;
     text-align: center;
-
     color: #FFFFFF;
+    border-radius: 0.5vw;
+    transition: background 0.2s, color 0.2s;
+
+    @media (max-width: 600px) {
+        .Nav-heading {
+            border-bottom-left-radius: 4vw;
+            border-bottom-right-radius: 4vw;
+            padding: 2vw 0;
+        }
+
+        .Nav-heading-elements {
+            font-size: 4vw;
+            margin: 2vw 2vw;
+            border-radius: 2vw;
+        }
+    }
 }
 
 .logoLink {

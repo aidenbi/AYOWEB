@@ -3,6 +3,9 @@
 .Directions {
     height: 25vw;
     margin: 5vw;
+    background: rgba(255, 255, 245, 0.7);
+    border-radius: 2vw;
+    box-shadow: 0 2px 12px rgba(140, 140, 100, 0.08);
 }
 
 .column {
@@ -21,6 +24,7 @@
     margin-left: 4vw;
     font-size: 1.6vw;
     font-weight: 500;
+    color: #898B61;
 
 }
 
@@ -34,6 +38,23 @@
     padding: 5px;
     margin-left: 4vw;
     font-size: 1vw;
+    color: #787878;
+
+    @media (max-width: 600px) {
+        .Directions {
+            height: auto;
+            border-radius: 6vw;
+            padding: 4vw 2vw;
+        }
+
+        .location {
+            font-size: 5vw;
+        }
+
+        .textbox {
+            font-size: 3vw;
+        }
+    }
 
 }
 

@@ -5,16 +5,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    box-shadow: 0 -2px 12px rgba(140, 140, 100, 0.08);
 }
 
 .grid-container {
-    display: flex;
-    position: relative;
     display: grid;
+    position: relative;
     grid-template-rows: 25vw 15vw;
     font-family: 'Circular Std';
     font-size: 1.6vw;
     color: white;
+    border-radius: 2vw;
 }
 
 .footer-contact {
@@ -58,6 +61,29 @@
     font-weight: 450;
     font-size: 1vw;
     line-height: 18px;
+    border-radius: 1vw;
+    box-shadow: 0 2px 8px rgba(140, 140, 100, 0.10);
+    transition: background 0.2s, color 0.2s;
+
+    @media (max-width: 600px) {
+        .footer-container {
+            border-top-left-radius: 6vw;
+            border-top-right-radius: 6vw;
+            padding: 4vw 0;
+        }
+
+        .grid-container {
+            font-size: 4vw;
+            border-radius: 6vw;
+        }
+
+        .call-button {
+            font-size: 4vw;
+            border-radius: 4vw;
+            padding: 2vw 4vw;
+        }
+    }
+
     padding: 0.7vw 2vw;
     border-radius: 1vw;
 }

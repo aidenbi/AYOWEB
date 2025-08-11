@@ -4,26 +4,44 @@
     justify-content: center;
     align-items: center;
     height: 25vw;
+    background: rgba(255, 255, 245, 0.7);
+    border-radius: 2vw;
+    box-shadow: 0 2px 12px rgba(140, 140, 100, 0.08);
 }
 
 .About-heading {
     font-family: 'Circular Std', sans-serif;
-
     font-weight: 500;
     font-size: 1.6vw;
     line-height: 25px;
     text-align: center;
-
-    color: #787878;
+    color: #898B61;
 }
 
 .About-paragraph {
     font-family: 'Circular Std', sans-serif;
-
     font-weight: 450;
     font-size: 1vw;
     line-height: 135%;
     max-width: 50vw;
     text-align: center;
     color: #787878;
+    margin-top: 1vw;
+
+    @media (max-width: 600px) {
+        .About {
+            height: auto;
+            border-radius: 6vw;
+            padding: 4vw 2vw;
+        }
+
+        .About-heading {
+            font-size: 5vw;
+        }
+
+        .About-paragraph {
+            font-size: 3vw;
+            max-width: 90vw;
+        }
+    }
 }

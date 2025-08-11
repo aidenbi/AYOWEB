@@ -7,6 +7,8 @@
     max-height: 20vw;
     margin-top: 4vh;
     margin-bottom: 4vh;
+    border-radius: 2vw;
+    box-shadow: 0 2px 12px rgba(140, 140, 100, 0.08);
 }
 
 .Hours-heading {
@@ -14,7 +16,23 @@
     font-weight: 500;
     font-size: 1.4vw;
     text-align: left;
-    color: #FFFFFF;
+    color: #fffef8;
+
+    @media (max-width: 600px) {
+        .Hours {
+            border-radius: 6vw;
+            padding: 4vw 2vw;
+            max-height: none;
+        }
+
+        .Hours-heading {
+            font-size: 5vw;
+        }
+
+        .Hours-paragraph {
+            font-size: 3vw;
+        }
+    }
 }
 
 .Hours-columns {

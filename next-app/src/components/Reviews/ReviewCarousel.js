@@ -60,27 +60,32 @@ const ReviewCarousel = () => {
         }
     };
     return (
-        <Carousel
-            swipeable={true}
-            draggable={true}
-            partialVisible={false}
-            showDots={true}
-            responsive={responsive}
-            ssr={true} // means to render carousel on server-side.
-            infinite={true}
-            autoPlay={false}
-            autoPlaySpeed={1000}
-            keyBoardControl={true}
-            transitionDuration={500}
-            containerClass="Reviews-carousel"
-            removeArrowOnDeviceType={["tablet", "mobile"]}
-            deviceType={"desktop"}
-            itemClass="carousel-item-padding-4-em"
-        >
-            {reviews.map((review, idx) => {
-                return <ReviewCard key={'reviewCard' + idx} image={review.image} name={review.name} review={review.review} value={review.value} />
-            })}
-        </Carousel>
+        <section className="Reviews">
+            <h2 className="Reviews-title">Customer Reviews</h2>
+            <div style={{ width: '100%', background: 'rgba(255,255,245,0.7)', borderRadius: '2vw', boxShadow: '0 2px 12px rgba(140,140,100,0.08)', padding: '2vw 0', margin: '0 auto' }}>
+                <Carousel
+                    swipeable={true}
+                    draggable={true}
+                    partialVisible={false}
+                    showDots={true}
+                    responsive={responsive}
+                    ssr={true}
+                    infinite={true}
+                    autoPlay={false}
+                    autoPlaySpeed={1000}
+                    keyBoardControl={true}
+                    transitionDuration={500}
+                    containerClass="Reviews-carousel"
+                    removeArrowOnDeviceType={["tablet", "mobile"]}
+                    deviceType={typeof window !== 'undefined' && window.innerWidth < 600 ? "mobile" : "desktop"}
+                    itemClass="carousel-item-padding-4-em"
+                >
+                    {reviews.map((review, idx) => (
+                        <ReviewCard key={'reviewCard' + idx} image={review.image} name={review.name} review={review.review} value={review.value} />
+                    ))}
+                </Carousel>
+            </div>
+        </section>
     )
 }
 
