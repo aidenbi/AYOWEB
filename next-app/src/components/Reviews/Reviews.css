@@ -88,6 +88,56 @@
     }
 }
 
+@media (max-width: 600px) {
+    .Reviews {
+        padding-bottom: 16vw;
+    }
+    .Reviews-title {
+        font-size: 5vw;
+        padding-top: 10vw;
+        margin-bottom: 10vw;
+    }
+    .Reviews-carousel {
+        padding-right: 0;
+        padding-bottom: 8vw;
+    }
+    .Reviews-reviewcard {
+        margin-left: 2vw;
+        margin-right: 2vw;
+        border-radius: 3vw;
+        height: max(40vw, 30vh);
+    }
+    .Reviews-rating {
+        margin-left: 2vw;
+    }
+    .Reviews-image {
+        max-width: 8vw;
+        margin-right: 2vw;
+        margin-left: 2vw;
+    }
+    .Reviews-metadata {
+        margin-top: 2vw;
+    }
+    .Reviews-name {
+        font-size: 4vw;
+        padding-top: 2vw;
+    }
+    .Reviews-text {
+        font-size: 3.5vw;
+        margin-top: 2vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        margin-bottom: 2vw;
+    }
+    .react-multiple-carousel__arrow--left,
+    .react-multiple-carousel__arrow--right {
+        display: none !important;
+    }
+    .react-multi-carousel-dot-list {
+        bottom: -20px !important;
+    }
+}
+
 .react-multiple-carousel__arrow--left {
     left: 0.5vw !important
 }
