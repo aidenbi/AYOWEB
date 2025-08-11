@@ -2,7 +2,7 @@
     width: 90%;
     display: block;
     margin: auto;
-    border-radius: 2vw;
+    border-radius: 0.75vw;
     box-shadow: 0 2px 12px rgba(140, 140, 100, 0.08);
 }
 
@@ -11,7 +11,7 @@
 
     @media (max-width: 600px) {
         .MenuImage {
-            border-radius: 6vw;
+            border-radius: 2vw;
         }
     }
 }
@@ -50,8 +50,8 @@
     width: 99%;
     height: 20%;
     margin: auto auto;
-    border-bottom-left-radius: 1vw;
-    border-bottom-right-radius: 1vw;
+    border-bottom-left-radius: 0.75vw;
+    border-bottom-right-radius: 0.75vw;
 }
 
 .MenuText {

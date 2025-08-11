@@ -5,8 +5,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
+    border-top-left-radius: 0.75vw;
+    border-top-right-radius: 0.75vw;
     box-shadow: 0 -2px 12px rgba(140, 140, 100, 0.08);
 }
 
@@ -17,7 +17,7 @@
     font-family: 'Circular Std';
     font-size: 1.6vw;
     color: white;
-    border-radius: 2vw;
+    border-radius: 0.75vw;
 }
 
 .footer-contact {
@@ -67,25 +67,24 @@
 
     @media (max-width: 600px) {
         .footer-container {
-            border-top-left-radius: 6vw;
-            border-top-right-radius: 6vw;
+            border-top-left-radius: 2vw;
+            border-top-right-radius: 2vw;
             padding: 4vw 0;
         }
 
         .grid-container {
             font-size: 4vw;
-            border-radius: 6vw;
+            border-radius: 2vw;
         }
 
-        .call-button {
-            font-size: 4vw;
-            border-radius: 4vw;
-            padding: 2vw 4vw;
-        }
+        font-size: 4vw;
+        border-radius: 4vw;
+        padding: 2vw 4vw;
     }
+}
 
-    padding: 0.7vw 2vw;
-    border-radius: 1vw;
+padding: 0.7vw 2vw;
+border-radius: 1vw;
 }
 
 .call-button:hover {

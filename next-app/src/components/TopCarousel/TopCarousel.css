@@ -2,7 +2,7 @@
     height: 100%;
     position: relative;
     overflow: hidden;
-    border-radius: 2vw;
+    border-radius: 0.75vw;
     box-shadow: 0 2px 12px rgba(140, 140, 100, 0.08);
 }
 
@@ -34,7 +34,7 @@
 
     @media (max-width: 600px) {
         .article {
-            border-radius: 6vw;
+            border-radius: 2vw;
         }
 
         .header {
