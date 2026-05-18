@@ -1,152 +1,147 @@
-@import url('http://fonts.cdnfonts.com/css/circular-std');
+@import url('https://fonts.cdnfonts.com/css/circular-std');
 
 .footer-container {
-    background-image: url("/main1.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-top-left-radius: 0.75vw;
-    border-top-right-radius: 0.75vw;
-    box-shadow: 0 -2px 12px rgba(140, 140, 100, 0.08);
+  padding: 2.5rem 1.5rem 2rem;
+  background: var(--surface);
+  border-radius: 1.5rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
 }
 
 .grid-container {
-    display: grid;
-    position: relative;
-    grid-template-rows: 25vw 15vw;
-    font-family: 'Circular Std';
-    font-size: 1.6vw;
-    color: white;
-    border-radius: 0.75vw;
-}
-
-.footer-contact {
-    grid-row-start: 1;
-    grid-row-end: 1;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1.4fr 1fr 0.9fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--text);
 }
 
 .footer-contactinfo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 10vw;
-    margin-left: 10vw;
-    margin-top: 10vw;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  justify-content: center;
+}
+
+.footer-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.footer-address {
+  font-family: 'Circular Std', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.footer-copy {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .contact {
-    font-family: 'Circular Std';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 2.4vw;
-    line-height: 40px;
-    text-align: center;
+  font-family: 'Circular Std', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  line-height: 1.05;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+  letter-spacing: 0.16em;
 }
 
 .order {
-    font-family: 'Circular Std';
-    font-style: normal;
-    font-weight: 450;
-    font-size: 1.4vw;
-    line-height: 150%;
+  font-family: 'Circular Std', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.9;
+  color: var(--text-muted);
 }
 
 .call-button {
-    background-color: #898B61;
-    text-decoration: none;
-    color: #fff;
-    font-family: 'Circular Std';
-    font-style: normal;
-    font-weight: 450;
-    font-size: 1vw;
-    line-height: 18px;
-    border-radius: 1vw;
-    box-shadow: 0 2px 8px rgba(140, 140, 100, 0.10);
-    transition: background 0.2s, color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  padding: 0.95rem 1.75rem;
+  border-radius: 999px;
+  background-color: var(--accent);
+  color: #fff;
+  font-family: 'Circular Std', sans-serif;
+  font-weight: 700;
+  font-size: 0.96rem;
+  box-shadow: 0 18px 40px rgba(75, 71, 54, 0.12);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
 
-    @media (max-width: 600px) {
-        .footer-container {
-            border-top-left-radius: 2vw;
-            border-top-right-radius: 2vw;
-            padding: 4vw 0;
-        }
+.call-button:hover {
+  transform: translateY(-1px);
+}
 
-        .grid-container {
-            font-size: 4vw;
-            border-radius: 2vw;
-        }
+.footer-phone {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
 
-        font-size: 4vw;
-        border-radius: 4vw;
-        padding: 2vw 4vw;
-    }
+.phone-paragraph {
+  font-family: 'Circular Std', sans-serif;
+  font-weight: 450;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  text-align: right;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
 
-    padding: 0.7vw 2vw;
-    border-radius: 1vw;
-    /* Removed stray closing brace and misplaced properties */
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
 
-    .call-button:hover {
-        color: white;
-    }
+.copyright {
+  font-family: 'Circular Std', sans-serif;
+  font-weight: 450;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(45, 44, 35, 0.72);
+}
 
+.icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.35rem;
+  color: var(--accent-dark);
+}
 
-    .footer-phone {
-        grid-row-start: 2;
-        grid-row-end: 2;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        background: rgba(0, 0, 0, 0.5);
-    }
+.icons a:hover {
+  color: var(--accent);
+}
 
-    .phone-paragraph {
-        padding-right: 5vw;
-        padding-bottom: 2vw;
-        width: 100%;
-        font-family: 'Circular Std';
-        font-style: normal;
-        font-weight: 450;
-        font-size: 12px;
-        line-height: 15px;
-        text-align: right;
-        text-transform: uppercase;
-        color: rgba(255, 255, 255, 0.8);
-    }
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
 
-    .footer-copyright {
-        grid-row-start: 2;
-        grid-row-end: 2;
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: column;
-        padding-left: 5vw;
-        padding-bottom: 2vw;
-        background: rgba(0, 0, 0, 0.5);
-    }
+  .footer-container {
+    padding: 2rem 1rem 1.5rem;
+  }
 
-    .copyright {
-        font-family: 'Circular Std';
-        font-style: normal;
-        font-weight: 450;
-        font-size: 12px;
-        line-height: 15px;
-        text-transform: capitalize;
-        color: rgba(255, 255, 255, 0.5);
-    }
+  .footer-phone,
+  .footer-copyright,
+  .icons {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 
-    .icons {
-        width: 4vw;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 1.5vw;
-    }
-
-    .text-on-image {
-        position: relative;
-    }
-
-    .bottom-image {
-        width: 100%;
-    }
+  .phone-paragraph {
+    text-align: left;
+  }
 }

@@ -9,16 +9,17 @@ import Footer from '../components/Footer/Footer';
 
 export default function Home() {
   return (
-    <div>
-      <NavBar></NavBar>
-      <TopCarousel></TopCarousel>
-      <About></About>
-      <Hours></Hours>
-      <Directions></Directions>
-      <Menu></Menu>
-      <Reviews></Reviews>
-      <Footer></Footer>
+    <div className="page-shell">
+      <NavBar />
+      <TopCarousel />
+      <main className="content-shell">
+        <About />
+        <Hours />
+        <Directions />
+        <Menu />
+        <Reviews />
+        <Footer />
+      </main>
     </div>
-
   );
 }

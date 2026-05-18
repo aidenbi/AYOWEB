@@ -1,65 +1,76 @@
 .MenuImage {
-    width: 90%;
-    display: block;
-    margin: auto;
-    border-radius: 0.75vw;
-    box-shadow: 0 2px 12px rgba(140, 140, 100, 0.08);
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .MenuImage:hover {
-    transform: scale(1.05);
-
-    @media (max-width: 600px) {
-        .MenuImage {
-            border-radius: 2vw;
-        }
-    }
+  transform: scale(1.04);
 }
 
 .slick-slide {
-    position: relative;
+  position: relative;
 }
 
 .slick-arrow {
-    color: black;
+  color: var(--accent-dark);
+  filter: drop-shadow(0 12px 25px rgba(75, 71, 54, 0.18));
 }
 
 .slick-prev {
-    z-index: 100;
-    left: 2vw !important;
+  z-index: 100;
+  left: 1.5rem !important;
 }
 
 .slick-next {
-    z-index: 100;
-    right: 2vw !important;
+  z-index: 100;
+  right: 1.5rem !important;
 }
 
 .menuCarouselContainer {
-    margin: 10vw 0em;
+  margin: 6rem 0;
 }
 
 .MenuCardContainer {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
 .MenuTextBox {
-    position: absolute;
-    transform: translate(0.5%, -75%);
-    background: rgba(0, 0, 0, 0.5);
-    width: 99%;
-    height: 20%;
-    margin: auto auto;
-    border-bottom-left-radius: 0.75vw;
-    border-bottom-right-radius: 0.75vw;
+  position: absolute;
+  inset: auto 0 0 0;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: linear-gradient(180deg, rgba(242, 239, 229, 0.45), rgba(242, 239, 229, 0.95));
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
 }
 
 .MenuText {
-    position: relative;
-    top: 25%;
-    text-align: center;
-    font-family: 'Circular Std', sans-serif;
-    font-size: max(1vw, 1.5vh);
-    vertical-align: middle;
-    color: white;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-size: clamp(0.95rem, 1.15vw, 1.2rem);
+  color: var(--text);
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .MenuImage {
+    width: 100%;
+    border-radius: 1.5rem;
+  }
+
+  .MenuText {
+    font-size: 1rem;
+  }
+
+  .slick-prev {
+    left: 0.75rem !important;
+  }
+
+  .slick-next {
+    right: 0.75rem !important;
+  }
 }
