@@ -4,23 +4,23 @@ import './Hours.css'
 const Hours = () => {
   return (
     <div className="Hours" id="hours">
-      <img className='SpanningImage' src="/spanningFood.svg"></img>
+      <img className='SpanningImage' src="/spanningFood.svg" alt="Fresh asian meal" />
       <div className='HoursContainer'>
-        <h1 className="Hours-heading">HOURS</h1>
+        <h1 className="Hours-heading">Hours</h1>
         <div className="Hours-columns">
           <div className="Hours-breakdown">
             <p className="Hours-paragraph">Monday</p>
-            <p className="Hours-paragraph">Tuesday-Thursday</p>
+            <p className="Hours-paragraph">Tuesday–Thursday</p>
             <p className="Hours-paragraph">Friday</p>
             <p className="Hours-paragraph">Saturday</p>
             <p className="Hours-paragraph">Sunday</p>
           </div>
           <div>
             <p className="Hours-paragraph">Closed</p>
-            <p className="Hours-paragraph">11am-10pm</p>
-            <p className="Hours-paragraph">11am-11pm</p>
-            <p className="Hours-paragraph">noon-11pm</p>
-            <p className="Hours-paragraph">noon-10pm</p>
+            <p className="Hours-paragraph">11am–10pm</p>
+            <p className="Hours-paragraph">11am–11pm</p>
+            <p className="Hours-paragraph">12pm–11pm</p>
+            <p className="Hours-paragraph">12pm–10pm</p>
           </div>
         </div>
       </div>

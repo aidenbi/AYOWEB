@@ -1,44 +1,30 @@
-'use client'
-import React, { Component } from 'react'
+﻿'use client'
+import React from 'react'
 import './TopCarousel.css'
-import Slider from 'react-slick'
 
+const hero = {
+  title: 'One bite after another',
+  subtitle: 'Fresh, flavorful dishes inspired by authentic Asian recipes',
+  image: '/main1.svg',
+  primary: 'Full Menu',
+  secondary: 'Call Now',
+}
 
-
-
-export default class TopCarousel extends Component {
-    render() {
-        const settings = {
-            dots: true,
-            arrows: false,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 1,
-            slidesToScroll: 1
-        };
-        return (
-            <div>
-                <Slider {...settings}>
-                    <div className='article'>
-                        <div className='header'>Asian Yummy One</div>
-                        <img
-                            className='Top-image' id='home' src='/main1.svg'>
-                        </img>
-                    </div>
-                    <div className='article'>
-                        <div className='header'>Asian Yummy One</div>
-                        <img
-                            className='Top-image' id='home' src='/main1.svg'>
-                        </img>
-                    </div>
-                    <div className='article'>
-                        <div className='header'>Asian Yummy One</div>
-                        <img
-                            className='Top-image' id='home' src='/main1.svg'>
-                        </img>
-                    </div>
-                </Slider>
-            </div>
-        );
-    }
+export default function TopCarousel() {
+  return (
+    <section className="TopHero" id="home">
+      <div className="TopHero-image-wrapper">
+        <img className="Top-image" src={hero.image} alt={hero.title} />
+        <div className="hero-content">
+          <div className="hero-label">Asian Yummy One</div>
+          <h1 className="hero-title">{hero.title}</h1>
+          <p className="hero-copy">{hero.subtitle}</p>
+          <div className="hero-actions">
+            <a href="/menu.pdf" className="hero-button">{hero.primary}</a>
+            <a href="tel:+17054245555" className="hero-secondary">{hero.secondary}</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
 }

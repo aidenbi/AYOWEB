@@ -1,87 +1,57 @@
-@import url('http://fonts.cdnfonts.com/css/circular-std');
-
 .Directions {
-    height: 25vw;
-    margin: 5vw;
-    background: rgba(255, 255, 245, 0.7);
-    border-radius: 0.75vw;
-    box-shadow: 0 2px 12px rgba(140, 140, 100, 0.08);
-}
-
-.column {
-    flex: 50%;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.location {
-    display: flex;
-    align-self: flex-start;
-    font-family: 'Circular Std', sans-serif;
-    padding: 5px;
-    margin-left: 4vw;
-    font-size: 1.6vw;
-    font-weight: 500;
-    color: #898B61;
-
+  display: grid;
+  gap: 1.5rem;
+  padding: 2.2rem;
+  background: var(--surface);
+  border-radius: 1.5rem;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
 }
 
 .row {
-    height: 25vw
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.location {
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  color: var(--accent-dark);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .textbox {
-    display: flex;
-    font-family: 'Circular Std', sans-serif;
-    padding: 5px;
-    margin-left: 4vw;
-    font-size: 1vw;
-    color: #787878;
-
-    @media (max-width: 600px) {
-        .Directions {
-            height: auto;
-            border-radius: 2vw;
-            padding: 4vw 2vw;
-        }
-
-        .location {
-            font-size: 5vw;
-        }
-
-        .textbox {
-            font-size: 3vw;
-        }
-    }
-
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.9;
+  max-width: 100%;
 }
 
-.row::after {
-    display: flex;
+iframe {
+  width: 100%;
+  min-height: 18rem;
+  border: 0;
+  border-radius: 1.25rem;
+  box-shadow: var(--shadow);
 }
 
-@media (max-width: 1220px) {
-    .location {
-        display: flex;
-        align-items: center;
-        flex: 100%;
-        margin-top: 2vw;
-        align-self: center;
-    }
+@media (max-width: 900px) {
+  .Directions {
+    padding: 1.75rem;
+  }
 
-    .HoursContainer {
-        margin: 5vw auto;
-    }
-
-    .directions {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .row {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
+  .location {
+    font-size: 2rem;
+  }
 }

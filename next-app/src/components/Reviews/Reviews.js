@@ -5,8 +5,11 @@ import ReviewCarousel from './ReviewCarousel'
 const Reviews = () => {
   return (
     <div className="Reviews" id="reviews">
-      <h1 className="Reviews-title">SATISFACTION GUARANTEED!</h1>
-      <ReviewCarousel></ReviewCarousel>
+      <div className="Reviews-intro">
+        <h1 className="Reviews-title">What Guests Are Saying</h1>
+        <p className="Reviews-subtitle">Our customers keep coming back for the crisp flavors, generous portions, and fast local delivery.</p>
+      </div>
+      <ReviewCarousel />
     </div>
   )
 }
