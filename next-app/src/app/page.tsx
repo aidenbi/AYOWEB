@@ -13,10 +13,10 @@ export default function Home() {
       <NavBar />
       <TopCarousel />
       <main className="content-shell">
-        <About />
+        <Menu />
         <Hours />
         <Directions />
-        <Menu />
+        <About />
         <Reviews />
         <Footer />
       </main>
