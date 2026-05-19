@@ -13,8 +13,8 @@ const MenuCarouselCard = ({ image, text }) => {
 
     return (
         <div className="card-wrapper">
-            <div className="MenuCardContainer">
-                <img className="MenuImage" src={image} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} />
+            <div className="MenuCardContainer" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+                <img className="MenuImage" src={image} />
                 {isHovering && (
                     <div className="MenuTextBox">
                         <div className="MenuText">{text}</div>
