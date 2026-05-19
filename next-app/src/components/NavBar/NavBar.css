@@ -50,6 +50,7 @@
   text-transform: uppercase;
   color: var(--accent-dark);
   transition: color 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
 }
 
 .Nav-link-item a:hover,
