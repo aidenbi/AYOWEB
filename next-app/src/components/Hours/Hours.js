@@ -10,16 +10,12 @@ const Hours = () => {
         <div className="Hours-columns">
           <div className="Hours-breakdown">
             <p className="Hours-paragraph">Monday</p>
-            <p className="Hours-paragraph">Tuesday–Thursday</p>
-            <p className="Hours-paragraph">Friday</p>
-            <p className="Hours-paragraph">Saturday</p>
-            <p className="Hours-paragraph">Sunday</p>
+            <p className="Hours-paragraph">Tuesday–Friday</p>
+            <p className="Hours-paragraph">Saturday-Sunday</p>
           </div>
           <div>
-            <p className="Hours-paragraph">Closed</p>
+            <p className="Hours-paragraph">Closed (holiday hours open)</p>
             <p className="Hours-paragraph">11am–10pm</p>
-            <p className="Hours-paragraph">11am–11pm</p>
-            <p className="Hours-paragraph">12pm–11pm</p>
             <p className="Hours-paragraph">12pm–10pm</p>
           </div>
         </div>
