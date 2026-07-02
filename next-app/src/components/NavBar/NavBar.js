@@ -1,25 +1,39 @@
 ﻿'use client'
 import React, { useState } from 'react'
-import { Link } from 'react-scroll'
-import './NavBar.css'
+import Link from 'next/link'
 
 const navItems = [
-  { label: 'About', to: 'about' },
-  { label: 'Hours', to: 'hours' },
-  { label: 'Directions', to: 'directions' },
-  { label: 'Menu', to: 'menu' },
-  { label: 'Reviews', to: 'reviews' },
-  { label: 'Contact', to: 'contact' },
+  { label: 'About', href: '/#about' },
+  { label: 'Hours', href: '/#hours' },
+  { label: 'Directions', href: '/#directions' },
+  { label: 'Menu', href: '/#menu' },
+  { label: 'Reviews', href: '/#reviews' },
+  { label: 'Contact', href: '/#contact' },
 ]
+
+const ORDER_REDIRECT_URL = 'https://www.order.store/ca/store/asian-yummy-one/8Sp7qjGqXpiQo5HXfF043g?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjE1JTIwRnJhc2VyJTIwU3QlMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjIyYTIzYzRlOC1hMjc2LTAyYjUtZjUyMi1lYjZmMWRjYzk1MTQlMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIydWJlcl9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTQ0LjMxODAwNDglMkMlMjJsb25naXR1ZGUlMjIlM0EtNzkuODg0NTE1OCU3RA%3D%3D'
+const ORDER_PAGE_ENABLED = process.env.NEXT_PUBLIC_SHOW_ORDER_PAGE === 'true'
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="Nav-heading">
+    <nav
+      className="Nav-heading"
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        zIndex: 99999,
+        background: 'rgba(242, 239, 229, 0.98)',
+        borderBottom: '1px solid rgba(121, 118, 92, 0.12)',
+        boxShadow: '0 12px 20px rgba(75, 71, 54, 0.08)',
+      }}
+    >
       <div className="Nav-container">
         <div className="Nav-brand">
-          <Link className="logoLink" to="home" spy={true} offset={-100} duration={500}>
+          <Link className="logoLink" href="/">
             <img src="/ayologo.png" alt="Asian Yummy One logo" />
           </Link>
 
@@ -37,14 +51,8 @@ const NavBar = () => {
 
         <ul className={`Nav-links ${isOpen ? 'open' : ''}`}>
           {navItems.map((item) => (
-            <li key={item.to} className="Nav-link-item">
-              <Link
-                to={item.to}
-                spy={true}
-                offset={-100}
-                duration={500}
-                onClick={() => setIsOpen(false)}
-              >
+            <li key={item.href} className="Nav-link-item">
+              <Link href={item.href} onClick={() => setIsOpen(false)}>
                 {item.label}
               </Link>
             </li>
@@ -52,7 +60,9 @@ const NavBar = () => {
         </ul>
 
         <div className="Nav-actions">
-          <a className="Nav-cta" href="tel:+17054245555">Order Now</a>
+          <Link className="Nav-cta" href={ORDER_PAGE_ENABLED ? '/order' : ORDER_REDIRECT_URL}>
+            Order Now
+          </Link>
         </div>
       </div>
     </nav>

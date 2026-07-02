@@ -1,8 +1,11 @@
 ﻿.Nav-heading {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  width: 100%;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0;
+  right: 0;
+  z-index: 99999 !important;
+  width: 100% !important;
+  min-height: 5rem;
   background: rgba(242, 239, 229, 0.98);
   border-bottom: 1px solid rgba(121, 118, 92, 0.12);
   box-shadow: 0 12px 20px rgba(75, 71, 54, 0.08);
