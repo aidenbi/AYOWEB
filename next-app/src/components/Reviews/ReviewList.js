@@ -1,4 +1,4 @@
-export default [
+const reviews = [
     {
         name: "Joe Felix",
         image: "https://lh3.googleusercontent.com/a/ALm5wu3Rphde_clV1vQjT0Pv0ODAxvgJPQkOXm1BeEMT=s128-c0x00000000-cc-rp-mo",
@@ -24,3 +24,5 @@ export default [
         value: 5
     }
 ]
+
+export default reviews

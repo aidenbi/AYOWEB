@@ -1,5 +1,6 @@
 ﻿'use client'
 import React from 'react'
+import Image from 'next/image'
 import './TopCarousel.css'
 
 const hero = {
@@ -14,7 +15,7 @@ export default function TopCarousel() {
   return (
     <section className="TopHero" id="home">
       <div className="TopHero-image-wrapper">
-        <img className="Top-image" src={hero.image} alt={hero.title} />
+        <Image className="Top-image" src={hero.image} alt={hero.title} width={1200} height={800} />
         <div className="hero-content">
           <div className="hero-label">Asian Yummy One</div>
           <h1 className="hero-title">{hero.title}</h1>

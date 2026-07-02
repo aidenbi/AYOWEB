@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Image from 'next/image'
 
 const MenuCarouselCard = ({ image, text }) => {
     const [isHovering, setIsHovering] = useState(false)
@@ -14,7 +15,13 @@ const MenuCarouselCard = ({ image, text }) => {
     return (
         <div className="card-wrapper">
             <div className="MenuCardContainer" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
-                <img className="MenuImage" src={image} />
+                <Image
+                    className="MenuImage"
+                    src={image}
+                    alt={text || 'Menu item'}
+                    width={360}
+                    height={240}
+                />
                 {isHovering && (
                     <div className="MenuTextBox">
                         <div className="MenuText">{text}</div>

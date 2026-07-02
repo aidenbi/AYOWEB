@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import Rating from '@mui/material/Rating'
 
 const ReviewCard = (props) => {
@@ -6,7 +7,7 @@ const ReviewCard = (props) => {
     return (
         <div className="Reviews-reviewcard">
             <div className="Reviews-metadata">
-                <img className="Reviews-image" src={image}></img>
+                <Image className="Reviews-image" src={image} alt={`${name} profile`} width={48} height={48} />
                 <p className="Reviews-name">{name}</p>
             </div>
             <p className="Reviews-text">{review}</p>

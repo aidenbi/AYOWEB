@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import MenuCarousel from './MenuCarousel'
 import './Menu.css'
 
@@ -6,7 +7,13 @@ const Menu = () => {
   return (
     <div>
       <div className="Menu" id="menu">
-        <img className="Menu-left" src="/menu-left.svg" alt="Delicious asian dishes" />
+        <Image
+          className="Menu-left"
+          src="/menu-left.svg"
+          alt="Delicious Asian dishes"
+          width={800}
+          height={500}
+        />
         <div className="Menu-right">
           <div className="Menu-info">
             <h1 className="Menu-title">Our Menu</h1>

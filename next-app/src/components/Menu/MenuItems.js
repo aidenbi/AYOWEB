@@ -1,4 +1,4 @@
-export default [
+const menuItems = [
     {
         image: '/Rectangle2.svg',
         text: "Chef's special chinese fried chicken"
@@ -24,3 +24,5 @@ export default [
         text: "Mandarin Egg Noodle"
     }
 ]
+
+export default menuItems

@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect, useMemo, useState } from 'react'
+import Image from 'next/image'
 import { FiPlus } from 'react-icons/fi'
 import './OrderMenu.css'
 
@@ -250,7 +251,7 @@ const allMenuItems = menuSections.flatMap((section) => section.items)
 
 const OrderMenu = () => {
   const [cartItems, setCartItems] = useState([])
-  const [notes, setNotes] = useState({})
+  const notes = {}
   const [deliveryMode, setDeliveryMode] = useState('pickup')
   const [activeCategory, setActiveCategory] = useState(menuSections[0].id)
   const [itemQuantities, setItemQuantities] = useState(() =>
@@ -308,10 +309,6 @@ const OrderMenu = () => {
 
   const removeCartItem = (itemId) => {
     setCartItems((current) => current.filter((entry) => entry.id !== itemId))
-  }
-
-  const handleNoteChange = (itemId, value) => {
-    setNotes((current) => ({ ...current, [itemId]: value }))
   }
 
   useEffect(() => {
@@ -467,7 +464,7 @@ const OrderMenu = () => {
                     className={`menu-item-card ${section.id === 'featured-items' ? 'featured' : 'horizontal'}`}
                   >
                     <div className={`menu-item-image ${section.id !== 'featured-items' ? 'horizontal' : ''}`}>
-                      <img src={item.image} alt={item.name} />
+                      <Image src={item.image} alt={item.name} width={320} height={240} />
                       <button type="button" className="card-add-button" onClick={() => addToCart(item)}>
                         <FiPlus />
                       </button>

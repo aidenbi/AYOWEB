@@ -1,5 +1,6 @@
 ﻿'use client'
 import React, { useState } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 
 const navItems = [
@@ -12,10 +13,11 @@ const navItems = [
 ]
 
 const ORDER_REDIRECT_URL = 'https://www.order.store/ca/store/asian-yummy-one/8Sp7qjGqXpiQo5HXfF043g?diningMode=DELIVERY&pl=JTdCJTIyYWRkcmVzcyUyMiUzQSUyMjE1JTIwRnJhc2VyJTIwU3QlMjIlMkMlMjJyZWZlcmVuY2UlMjIlM0ElMjIyYTIzYzRlOC1hMjc2LTAyYjUtZjUyMi1lYjZmMWRjYzk1MTQlMjIlMkMlMjJyZWZlcmVuY2VUeXBlJTIyJTNBJTIydWJlcl9wbGFjZXMlMjIlMkMlMjJsYXRpdHVkZSUyMiUzQTQ0LjMxODAwNDglMkMlMjJsb25naXR1ZGUlMjIlM0EtNzkuODg0NTE1OCU3RA%3D%3D'
-const ORDER_PAGE_ENABLED = process.env.NEXT_PUBLIC_SHOW_ORDER_PAGE === 'true'
 
-const NavBar = () => {
+const NavBar = ({ orderPageEnabled = false }) => {
   const [isOpen, setIsOpen] = useState(false)
+
+  const orderHref = orderPageEnabled ? '/order' : ORDER_REDIRECT_URL
 
   return (
     <nav
@@ -34,7 +36,7 @@ const NavBar = () => {
       <div className="Nav-container">
         <div className="Nav-brand">
           <Link className="logoLink" href="/">
-            <img src="/ayologo.png" alt="Asian Yummy One logo" />
+            <Image src="/ayologo.png" alt="Asian Yummy One logo" width={48} height={48} />
           </Link>
 
           <button
@@ -60,7 +62,7 @@ const NavBar = () => {
         </ul>
 
         <div className="Nav-actions">
-          <Link className="Nav-cta" href={ORDER_PAGE_ENABLED ? '/order' : ORDER_REDIRECT_URL}>
+          <Link className="Nav-cta" href={orderHref}>
             Order Now
           </Link>
         </div>
